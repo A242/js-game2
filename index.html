@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first plain html5 game</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      canvas {
+        display: block;
+        margin: 0 auto;
+      }
+      #player, #background {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="audio">
+      <source src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/rat-squeak_MJCY2LVu.mp3" type="audio/mpeg">
+      <source src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/rat-squeak_MJCY2LVu.mp3" type="audio/mpeg">
+      <source src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/rat-squeak_MJCY2LVu.mp3" type="audio/mpeg">
+    </audio>
+    <img id="player" src="img/rat.png">
+    <img id="background" src="img/background.jpg">
+    <canvas id="canvas"></canvas>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
