@@ -24,8 +24,13 @@ $(document).on("touchmove", function(e){
   e.preventDefault();
   var touchX = e.touches[0].clientX;
   var touchY = e.touches[0].clientY;
-  if (touchX < player.x) player.velX = -5;
-  if (touchX > player.x) player.velX = 5;
+  if (touchX < player.x) {
+    player.velX = -5;
+    player.dir = "left";
+  }
+  if (touchX > player.x) {
+    player.velX = 5;
+    player.dir = "right";
   if (touchY < player.y) player.velY = -5;
   if (touchY > player.y) player.velY = 5;
 });
