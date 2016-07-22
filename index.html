@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no"/>
     <title>My first plain html5 game</title>
     <style>
       body {
@@ -14,18 +15,31 @@
       #player, #background {
         display: none;
       }
+      .hideyokids {
+        display: none;
+      }
     </style>
   </head>
   <body>
-    <audio id="audio">
-      <source src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/rat-squeak_MJCY2LVu.mp3" type="audio/mpeg">
-      <source src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/rat-squeak_MJCY2LVu.mp3" type="audio/mpeg">
-      <source src="https://d1490khl9dq1ow.cloudfront.net/sfx/mp3preview/rat-squeak_MJCY2LVu.mp3" type="audio/mpeg">
-    </audio>
-    <img id="player" src="img/rat.png">
+    <img class="hideyokids" id="playerf1" src="img/playerf1.png">
+    <img class="hideyokids" id="playerf2" src="img/playerf2.png">
+    <img class="hideyokids" id="playerf3" src="img/playerf3.png">
+    <img class="hideyokids" id="playerf4" src="img/playerf4.png">
+    <img class="hideyokids" id="playerf5" src="img/playerf5.png">
+    <img class="hideyokids" id="playerf6" src="img/playerf6.png">
+    <img class="hideyokids" id="enemyf1" src="img/enemyf1.png">
+    <img class="hideyokids" id="enemyf2" src="img/enemyf2.png">
+    <img class="hideyokids" id="enemyf3" src="img/enemyf3.png">
+    <img class="hideyokids" id="enemyf4" src="img/enemyf4.png">
+    <img class="hideyokids" id="enemyf5" src="img/enemyf5.png">
+    <img class="hideyokids" id="enemyf6" src="img/enemyf6.png">
     <img id="background" src="img/background.jpg">
+    <img id="player" src="img/rat.png">
     <canvas id="canvas"></canvas>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="player.js"></script>
+    <script src="enemy.js"></script>
     <script src="main.js"></script>
+    <script src="controls.js"></script>
   </body>
 </html>
