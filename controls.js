@@ -20,7 +20,6 @@ $(document).keyup(function(e){
 $(document).on("touchmove", function(e){
   //where the touch happens
   // e.touches[0].clientX, e.touches[0].clientY
-  //comment
   e.preventDefault();
   var touchX = e.touches[0].clientX;
   var touchY = e.touches[0].clientY;
